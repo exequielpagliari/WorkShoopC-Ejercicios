@@ -17,7 +17,7 @@ int main()
 	std::cout << std::endl;
 	std::cout << "Welcome " << firstName << " " << lastName
 	<< std::endl;
-	std::cout << "You are " << age << " years old.";
+	std::cout << "You are " << age << " years old." << std::endl;
 
 	return 0;
 }
