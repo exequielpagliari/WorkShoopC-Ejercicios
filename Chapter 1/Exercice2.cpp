@@ -27,5 +27,6 @@ int main()
 	{
 		std::cout << "Pass: Grade A";
 	}
+	std::cout << '\n';
 	return 0;
 }
