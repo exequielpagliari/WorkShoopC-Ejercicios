@@ -28,7 +28,7 @@ int main()
 	        maxNumber = std::stoi(input);
 
 		srand((unsigned) time(0));
-		int number = minNumber + rand () % (maxNumber +1 - minNumber);
+		int number = (minNumber + rand()) % (maxNumber +1 - minNumber);
 
 
 		while(true)
@@ -38,7 +38,7 @@ int main()
 			getline(std::cin, input);
 			numberInput = std::stoi(input);
 
-			if(guessNumber < 0)
+			if(guessNumber <= 0)
 			{
 				break;
 			}
@@ -50,7 +50,7 @@ int main()
 				std::cout << "Well done, you guessed the number.";
 				break;
 			}
-			else if (guessNumber < number)
+			else if (numberInput < number)
 			{
 				std::cout << "Your guess was too high. You have " << guessNumber
 				<< " gueses remaining.";
